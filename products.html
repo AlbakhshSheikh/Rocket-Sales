@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .container-fluid.pt-5 {
+        padding-top: 2rem;
+        /* Adjust as needed */
+        padding-bottom: 20px;
+        /* Reduce bottom padding to decrease height */
+      }
+
+      .container.pt-1 {
+        padding-top: 1rem;
+        /* Adjust as needed */
+      }
+
+      .col-lg-5.rounded {
+        min-height: 300px;
+        /* Adjust the min-height to reduce the height of the image container */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center" style="height: 45px;">
+            <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Plot no.414, 1st Floor,
+              Mahima Apartment, Hanuman Nagar, Nagpur</small>
+            <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i><a href="tel:07448000800"
+                class="text-light text-decoration-none">07448000800</a></small>
+            <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a href="mailto:hbgadget221@gmail.com"
+                class="text-light text-decoration-none">hbgadget221@gmail.com</a></small>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px;">
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                class="fab fa-facebook-f fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                class="fab fa-linkedin-in fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                class="fab fa-instagram fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                class="fab fa-youtube fw-normal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="img/Group 768.png" alt="" srcset="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link ">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="products.html" class="nav-item nav-link active">Products</a>
+            <a href="features.html" class="nav-item nav-link">Features</a>
+            <a href="contact.html" class="nav-item nav-link ">Contact</a>
+          </div>
+          <a href="#" class="btn btn-primary py-2 px-4 ms-3" style="border-radius: 20px;">Get Free Trial</a>
+          <a href="" class="btn btn-primary py-2 px-4 ms-3" style="border-radius: 20px;">Login</a>
+        </div>
+      </nav>
+
+      <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+          <div class="col-12 pt-lg-5 mt-lg-5 text-center"><img src="img/Group 768.png" alt="">
+            <h1 class="display-4 text-white animated zoomIn">Product</h1>
+            <a href="" class="h5 text-white">Home</a>
+            <i class="far fa-circle text-white px-2"></i>
+            <a href="" class="h5 text-white">Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+          <div class="modal-header border-0">
+            <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center">
+            <div class="input-group" style="max-width: 600px;">
+              <input type="text" class="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword">
+              <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <!-- <h5 class="fw-bold text-primary text-uppercase">About Us</h5> -->
+              <h5 class="mb-0">FACE RECOGNITION ATTENDANCE SOFTWARE</h5>
+            </div>
+            <h2 class="mb-4">Brighten your day with a smile <br>
+              and experience the ease of <br>
+              attendance monitoring.</h2>
+            <p>✅ Advanced facial recognition technology</p>
+            <p>✅ Manage employee leave requests & shifts</p>
+            <p>✅ Visibility into workforce activity across sites</p>
+            <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s"> Request Call
+              Back</a>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/Illustration123.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background-color: #E5ECF6;">
+      <div class="container">
+        <div class=" text-center pb-3">
+          <h4 class="fw-bold">Say goodbye to monitoring attendance manually..!</h4>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 1 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/verified-user 2.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Real Time Attendance</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Gain real-time insights into team <br> availability
+                  (working, on leave, present).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/transparency 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Increase Transparency</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Identify late arrivals or incomplete shifts,<br>
+                  ensuring accountability among employees.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 2 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/staff 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Live Staff Count at a Site/Office</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Check how many employees are <br> present/absent at
+                  your sites/offices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/dashboard 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Intuitive Online Dashboard</h6>
+                <p class="text-start" style="font-size: 0.875rem;">A simple dashboard, showing all important <br>
+                  information at a glance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <h5 class="fw-bold text-primary text-uppercase">EXPENCE MANAGEMENT SYSTEM</h5>
+
+            </div>
+            <h2 class="mb-0">Tracks Receipts and Control Finances..!</h2>
+            <h5 class="mb-4">Ensure every expense is accounted for, <br>
+              making each one truly count.</h5>
+            <p>✅ Instant evidence upload</p>
+            <p>✅ Quick approval and Refund</p>
+            <p>✅ Seamless expense categorisation</p>
+            <p>✅ Analytical expense tracking reports</p>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/OBJECTS.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <h5 class="fw-bold text-primary text-uppercase">LIVE TRACKING</h5>
+
+            </div>
+            <h2 class="mb-0">Real-time tracking that leaves <br>
+              no room for uncertainty.</h2>
+            <h5 class="mb-4"> Ensure precision in every moment with <br>
+              our reliable tracking technology</h5>
+            <p>✅ Real-time Location Monitoring</p>
+            <p>✅ 99% Accurate Distance Calculation</p>
+            <p>✅ Create Geofence Alerts</p>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/Group 833.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background-color: #fff8e8;">
+      <div class="container">
+        <!-- <div class=" text-center pb-3">
+          <h4 class="fw-bold">Say goodbye to monitoring attendance manually..!</h4>
+        </div> -->
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 1 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/Group 805.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Monitor Real-time Employee Location</h6>
+                <p class="text-start" style="font-size: 0.875rem;">With unparalleled accuracy and reliability, you can
+                  <br>
+                  monitor the location and movement of your field team.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/distance 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Track total distance travelled</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Gain comprehensive insights into the total distance <br>
+                  covered by your field team, ensuring efficient route planning and changing travel time with precise
+                  data.
+                  .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 2 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/target 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Increase Accountability with Geofences</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Get real-time geofence boundary notifications when
+                  <br>
+                  a team member enters or exits a geofence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/document-review 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Detailed Timeline Review</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Review the timeline of your field team members to
+                  know <br>
+                  where they have been and what they have been doing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <h5 class="fw-bold text-primary text-uppercase">ORDER MANAGEMENT</h5>
+
+            </div>
+            <h2 class="mb-0">Effortless Order Management at <br>
+              Your Fingertips</h2>
+            <h5 class="mb-4"> Streamline your workflow with intuitive tools <br>
+              and seamless order tracking.</h5>
+            <p>✅ Customize your invoices</p>
+            <p>✅ Generate PO</p>
+            <p>✅ Inventory Management</p>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/Group 834.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background-color: #f6e5f5;">
+      <div class="container">
+        <!-- <div class=" text-center pb-3">
+          <h4 class="fw-bold">Say goodbye to monitoring attendance manually..!</h4>
+        </div> -->
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 1 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/invoice 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Customize your invoice</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Create personalized invoices with ease, tailored to
+                  fit <br>
+                  your brand and client needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/material-management 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Manage Inventory Online</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Streamline your inventory control with our
+                  easy-to-use <br>
+                  online management system.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 2 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/purchase-order 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Generate the Purchase Order</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Generate a formal request to authorize the purchase
+                  <br>
+                  of goods or services from a supplier.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <h5 class="fw-bold text-primary text-uppercase">COMPREHENSIVE MANAGEMENT STRATEGIES</h5>
+
+            </div>
+            <h2 class="mb-0"> Integrated methods to optimize team,
+              task, user, and target management.</h2>
+            <h5 class="mb-4"> Streamlining all management processes for greater efficiency.</h5>
+            <p>✅ Team Management</p>
+            <p>✅ Task Management</p>
+            <p>✅ Task Management</p>
+            <p>✅ Target Management</p>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/OBJECTSasd.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background-color: #e5f6ec;">
+      <div class="container">
+        <!-- <div class=" text-center pb-3">
+          <h4 class="fw-bold">Say goodbye to monitoring attendance manually..!</h4>
+        </div> -->
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 1 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/management 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Verify Client Visits by Field Representatives</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Ensure accurate tracking and validation of client
+                  <br>
+                  engagements by field representatives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/task 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Formulate and Assign Daily Activity Schedules</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Organize and delegate daily tasks to optimize field
+                  operations and improve efficiency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 2 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/user 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Manage user roles and access efficiently</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Ensure streamlined operations by effectively
+                  controlling user permissions and responsibilities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/effectiveness 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Establish and review target progress</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Continuously assess progress to ensure targets are
+                  <br>
+                  met and adjust strategies as needed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <h5 class="fw-bold text-primary text-uppercase">SMART DASHBOARD</h5>
+
+            </div>
+            <h2 class="mb-0"> Employs advanced analytics to deliver <br>
+              actionable insights through an smart <br>
+              and user-centric interface.</h2>
+            <h5 class="mb-4">Transforms complex data into actionable insights with an intuitive and <br>
+              user-friendly dashboard.</h5>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 text-start"> <!-- Ensure text is aligned to the left -->
+                  <p>✅ Attendance Records</p>
+                  <p>✅ Employee Leaves</p>
+                  <p>✅ Orders Processed</p>
+                  <p>✅ Customers Visited</p>
+                </div>
+                <div class="col-md-6 text-start"> <!-- Ensure text is aligned to the left -->
+                  <p>✅ Real-Time Sales Performance</p>
+                  <p>✅ Live Tracking of Sales Team</p>
+                  <p>✅ Expense Summary</p>
+                  <p>✅ Task Management Overview</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/Group 809.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background-color: rgb(237, 235, 245);">
+      <div class="container">
+        <!-- <div class=" text-center pb-3">
+          <h4 class="fw-bold">Say goodbye to monitoring attendance manually..!</h4>
+        </div> -->
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 1 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/package 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Task Status Monitoring</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Effortlessly track tasks that are delayed, pending,
+                  ongoing, or completed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/route 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Efficient Route Planning for Field Executives</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Create and allocate routes for your field executives
+                  quickly and easily.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 2 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/performance 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Task Completion Performance Analysis</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Determine leading achievers in task completion on a
+                  weekly and monthly schedule.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/test 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start">Track Field Staff Task Duration</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Monitor the average duration of tasks performed by
+                  your field staff.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container pt-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-2">
+              <h5 class="fw-bold text-primary text-uppercase">Chat Box</h5>
+
+            </div>
+            <h2 class="mb-0">Connect instantly with our interactive
+              chat box for real-time support.</h2>
+            <h5 class="mb-4"> Experience seamless communication and quick resolutions
+              through our smart and responsive chat feature.</h5>
+            <p>✅Real-Time Communication</p>
+            <p>✅ Group Chats</p>
+            <p>✅ File Sharing</p>
+            <p>✅ Message History</p>
+          </div>
+          <div class="col-lg-5 rounded wow zoomIn" style="min-height: 300px;" data-wow-delay="0.9s">
+            <img src="img/Assets/OBJECTSqa.png" alt="Objects">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background-color: #F9F3FA;">
+      <div class="container">
+        <!-- <div class=" text-center pb-3">
+          <h4 class="fw-bold">Say goodbye to monitoring attendance manually..!</h4>
+        </div> -->
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 1 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/real-time 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Real-Time Communication</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Engage instantly with our platform for immediate
+                  and effective interaction.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/group-chat 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Group Chats</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Collaborate efficiently with team members through
+                  dynamic group chats.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Row 2 -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/data-sharing 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> File Sharing</h6>
+                <p class="text-start" style="font-size: 0.875rem;">Securely exchange documents and media with ease
+                  and efficiency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <img src="img/Assets/chat 1.png" class="me-3" style="width: 60px; height: 60px;">
+              <div style="padding-left: 30px;">
+                <h6 class="fw-bold text-start"> Message History</h6>
+                <p class="text-start" style="font-size: 0.875rem;"> Access past conversations effortlessly to review and
+                  track all interactions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About End -->
+
+    <!-- Vendor Start -->
+    <div class="container-fluid  wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5 ">
+        <div class="bg-white">
+          <div class="owl-carousel vendor-carousel">
+            <img src="img/vendor-1.jpg" alt="">
+            <img src="img/vendor-2.jpg" alt="">
+            <img src="img/vendor-3.jpg" alt="">
+            <img src="img/vendor-4.jpg" alt="">
+            <img src="img/vendor-5.jpg" alt="">
+            <img src="img/vendor-6.jpg" alt="">
+            <img src="img/vendor-7.jpg" alt="">
+            <img src="img/vendor-8.jpg" alt="">
+            <img src="img/vendor-9.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Vendor End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center h-100  p-4">
+              <a href="index.html" class="navbar-brand">
+                <img src="img/Group 768.png" alt="12" class="img-fluid">
+                <!-- <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1> -->
+              </a>
+              <p class="mt-3 mb-4">Transform Your Sales Operations with Cutting-Edge Tools for the desired
+                Results,Unlock Your Field Sales Team’s success with our highly effective & easy to use
+                Sales Management Solution</p>
+
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="row gx-5">
+              <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Get In Touch</h3>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-geo-alt text-primary me-2"></i>
+                  <p class="mb-0"> Plot no.414, 1st Floor, Mahima Apartment, Hanuman Nagar, Nagpur.
+                  </p>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-envelope-open text-primary me-2"></i>
+                  <p class="mb-0">hbgadget221@gmail.com</p>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <p class="mb-0">07448000800</p>
+                </div>
+                <div class="d-flex mt-4">
+                  <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square me-2"
+                    href="https://www.linkedin.com/company/rocket-sales-tracker/"><i
+                      class="fab fa-linkedin-in fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square"
+                    href="https://www.instagram.com/hb.gadget?igsh=MWNsem9laWR4eWhodw=="><i
+                      class="fab fa-instagram fw-normal"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Quick Links</h3>
+                </div>
+                <div class="link-animated d-flex flex-column justify-content-start">
+                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                    Services</a>
+                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The
+                    Team</a>
+                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                  <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Google Map</h3>
+                </div>
+                <div class="link-animated d-flex flex-column justify-content-start map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8719027920783!2d79.1010812!3d21.1285453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf1172c8bb97%3A0x1ffbf970598d7002!2sCredence%20Tracker!5e0!3m2!1sen!2sin!4v1706957237808!5m2!1sen!2sin"
+                    width="400" height="200" style="border:0;" allowfullscreen loading="fast"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-4">
+            <div class="d-flex align-items-center justify-content-center" style="height: 45px;">
+              <p class="mb-0 text-center">
+                <a class="text-white " href="https://www.linkedin.com/in/albakhshsheikh/">&copy; All
+                  Rights Reserved. Designed by</a> <a class="text-white border-bottom"
+                  href="https://albakhshsheikh.github.io/Portfolio_Website/">Albakhsh Sheikh</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
